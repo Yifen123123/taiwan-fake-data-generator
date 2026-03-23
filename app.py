@@ -11,12 +11,20 @@ from utils.exporters import dataframe_to_csv_bytes, dataframe_to_excel_bytes
 def main() -> None:
     """Render the Streamlit application."""
     st.set_page_config(
+<<<<<<< HEAD
         page_title="台灣假資料產生器",
+=======
+        page_title="假資料產生器",
+>>>>>>> 3a2f62f (Add ROC birthdate field)
         page_icon="📄",
         layout="wide",
     )
 
+<<<<<<< HEAD
     st.title("台灣假資料產生器")
+=======
+    st.title("假資料產生器")
+>>>>>>> 3a2f62f (Add ROC birthdate field)
     st.caption("所有資料皆為測試用途的假資料，請勿作為真實個資使用。")
 
     count = st.selectbox("選擇要產生的筆數", options=[10, 50, 100, 500], index=0)
@@ -60,3 +68,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# 執行：streamlit run app.py   
